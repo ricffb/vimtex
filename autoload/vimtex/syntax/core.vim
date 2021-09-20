@@ -1401,6 +1401,10 @@ function! s:match_math_symbols() abort " {{{1
   syntax match texMathSymbol '\\sqrt\[4]'            contained conceal cchar=∜
   syntax match texMathSymbol '\\coloneqq\>'          contained conceal cchar=≔
 
+  syntax match texMathSymbol '\\extchoice\>'         contained conceal cchar=☐
+  syntax match texMathSymbol '\\intchoice\>'         contained conceal cchar=⊓
+  syntax match texMathSymbol '\\then\>'              contained conceal cchar=→
+
   if &ambiwidth ==# 'double'
     syntax match texMathSymbol '\\gg\>'          contained conceal cchar=≫
     syntax match texMathSymbol '\\ll\>'          contained conceal cchar=≪
